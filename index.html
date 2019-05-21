@@ -121,7 +121,7 @@
       <footer class="main-footer">
         <div class="map">
           <div class="map-img">
-            <img src="img/map-img.jpg" width="1440" height="416" alt="Местоположение студии на карте">
+            <img src="img/map-img.jpg" width="1440" height="416" alt="Офис студии по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
           </div>
           <div class="contacts">
             <p class="main-text">Nёrds design studio</p>
@@ -129,22 +129,43 @@
             <p>Тел. +7 (812) 275-75-75</p>
             <a class="button" href="#">Напишите нам</a>
           </div>
-        </div>
-        <ul class="social-list">
-          <li>
-            <a class="social-button" href="#">Вконтакте</a>
-          </li>
-          <li>
-            <a class="social-button" href="#">Фейсбук</a>
-          </li>
-          <li>
-            <a class="social-button" href="#">Инстаграм</a>
-          </li>
-        </ul>
-        <p>
-        <b>Давайте дружить, это выгодно!</b>
-        Скидка 10% для друзей из социальных сетей
-        </p>
-      </footer>
+          <div class="modal modal-feedback">
+            <h2>Напишите нам</h2>
+            <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+              <div class="feedback-item">
+                <label for="feedback-name">Ваше имя</label>
+                <input id="feedback-name" type="text" name="name" value="" placeholder="Имя Фамилия">
+              </div>
+              <div class="feedback-item">
+                <label for="feedback-email">Ваш e-mail</label>
+                <input id="feedback-email" type="email" name="email" value="" placeholder="email@example.com">
+              </div>
+              <div class="feedback-item">
+                <label for="feedback-comment">Текст письма</label>
+                <textarea id="feedback-comment" name="comment" rows="5" placeholder="В свободной форме"></textarea>
+              </div>
+              <button class="button" type="submit">Отправить</button>
+            </form>
+            <button class="modal-close" type="button">
+              Закрыть
+            </button>
+           </div>
+          </div>
+          <ul class="social-list">
+            <li>
+              <a class="social-button" href="#">Вконтакте</a>
+            </li>
+            <li>
+              <a class="social-button" href="#">Фейсбук</a>
+            </li>
+            <li>
+              <a class="social-button" href="#">Инстаграм</a>
+            </li>
+          </ul>
+          <p>
+          <b>Давайте дружить, это выгодно!</b>
+          Скидка 10% для друзей из социальных сетей
+          </p>
+       </footer>
    </body>
 </html>
