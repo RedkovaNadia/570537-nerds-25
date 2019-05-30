@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Дизайн-студия Нёрдс</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="main-header">
@@ -49,7 +51,7 @@
               Покорите топ-10 приложений в<br>
               AppStore и Google play
             </p>
-            <a class="button" href="productcart.html">Заказать</a>
+            <a class="button button-green" href="productcart.html">Заказать</a>
           </li>
           <li class="services-item">
             <h3>Презентации</h3>
@@ -57,14 +59,14 @@
               Вы даже не подозреваете,<br>
               насколько вы изумительны!
             </p>
-            <a class="button" href="productcart.html">Заказать</a>
+            <a class="button button-yellow" href="productcart.html">Заказать</a>
           </li>
          </ul>
         </section>
 
         <section class="studio">
           <h2 class="visually-hidden">О нас</h2>
-          <p>
+          <p class="slogan">
               Мы - маленька, но гордая<br>
               дизай-студия из Краснодара
           </p>
@@ -78,12 +80,12 @@
           </ul>
           <p class="main-text">С 2004 года любим точность во всем:</p>
           <table class="studio-statistics">
-            <tr>
-              <td>Уровень самоотдачи</td>
-              <td>Соблюдение сроков</td>
-              <td>Минимальная предоплата</td>
+            <tr class="features-list">
+              <th>Уровень самоотдачи</th>
+              <th>Соблюдение сроков</th>
+              <th>Минимальная предоплата</th>
             </tr>
-            <tr>
+            <tr class="number-of-percents">
               <td>146<span>%</span></td>
               <td>100<span>%</span></td>
               <td>50<span>%</span></td>
@@ -123,10 +125,12 @@
           <div class="map-img">
             <img src="img/map-img.jpg" width="1440" height="416" alt="Офис студии по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
           </div>
-          <div class="contacts">
-            <p class="main-text">Nёrds design studio</p>
-            <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-            <p><a href="tel:+7(812)275-75-75">Тел. +7 (812) 275-75-75</a></p>
+          <div class="contacts-block">
+            <p>Nёrds design studio</p>
+            <address>
+            191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+            <a href="tel:+78122757575">Тел. +7 (812) 275-75-75</a>
+            </address>
             <a class="button" href="#">Напишите нам</a>
           </div>
           <div class="modal modal-feedback">
@@ -163,7 +167,7 @@
             </li>
           </ul>
           <p>
-          <b>Давайте дружить, это выгодно!</b>
+          <b class="footer-slogan">Давайте дружить, это выгодно!</b>
           Скидка 10% для друзей из социальных сетей
           </p>
        </footer>

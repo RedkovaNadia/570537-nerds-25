@@ -1,0 +1,349 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #283136;
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.button {
+  font: inherit;
+  font-size: 16px;
+  line-height: 18px;
+
+  font-weight: 500;
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+
+  background-color: #fb565a;
+  border: none;
+}
+
+/*  Зеленая и желтая кнопки на главной страице -  спокойное состояние */
+.button-green {
+  background-color: #00ca74;
+}
+
+.button-yellow {
+  background-color: #efc84a;
+}
+
+/* Кнопка 'ПОКАЗАТЬ'(КАТАЛОГ) и кнопки пагинации (КАТАЛОГ) - спокойное состояние */
+.filter-button,
+.pagination-item a {
+  color: #000000;
+  background-color: #eeeeee;
+}
+
+/* Работаем с кнопками (наведение, фокус) */
+.button:hover,
+.button:focus {
+  background-color: #e74246;
+}
+
+.button-green:hover,
+.button-green:focus {
+  background-color: #00bc6c;
+}
+
+.button-yellow:hover,
+.button-yellow:focus {
+  background-color: #eab534;
+}
+
+/* Кнопка 'ПОКАЗАТЬ'(КАТАЛОГ) и кнопки пагинации (КАТАЛОГ) - состояние наведения, фокуса  */
+.filter-button:hover,
+.filter-button:focus,
+.pagination-item a:hover,
+.pagination-item a:focus {
+  background-color: #dfdfdf;
+}
+
+/* Любой элемент с классом кнопки в активном состоянии */
+.button:active {
+  box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #d7373b;
+}
+
+/* Зеленая и желта кнопки в активном состоянии */
+.button-green:active {
+  background-color: #00bc6c;
+}
+
+.button-yellow:active {
+  background-color: #e5a722;
+}
+
+/* Кнопка 'ПОКАЗАТЬ'(КАТАЛОГ) и кнопки пагинации (КАТАЛОГ) - активное состояние */
+.filter-button:active,
+.pagination-item a:active {
+  color: rgba(0, 0, 0, 0.3);
+  background-color: #d5d5d5;
+}
+
+/* Кнопка цены - активное состояние (КАТАЛОГ) */
+.price-button:active {
+  color: #ffffff;
+}
+
+/* Работаем с первой кнопкой пагинации */
+.pagination-item-current a {
+  background-color: inherit;
+  border: solid 3px #dbdbdb;
+}
+
+.pagination-item a:last-child {
+  text-transform: uppercase;
+}
+
+.pagination-item-current a:hover,
+.pagination-item-current a:focus,
+.pagination-item-current a:active {
+  color: #000000;
+  background-color: inherit;
+  border: solid 3px #dbdbdb;
+}
+
+/* ------------ Навигация в шапке */
+.main-navigation {
+  line-height: 30px;
+  font-weight: 500;
+  color: #000000;
+  text-transform: uppercase;
+
+  background-color: #eeeeee;
+}
+
+.site-navigation {
+  list-style: none;
+}
+
+.site-navigarion li:nth-child(2n) {
+  text-align: right;
+}
+
+.product-cart-link {
+  text-align: right;
+}
+
+.site-navigation a,
+.product-cart-link a {
+  color: #000000;
+}
+
+/* Состояние навигационного меню при наведении, фокусе, при клике */
+.site-navigation a:hover,
+.site-navigation a:focus,
+.product-cart-link a:hover,
+.product-cart-link a:focus {
+  color: #fb565a;
+}
+
+.site-navigation a:active,
+.product-cart-link a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+/* ------------ Блок с услугами */
+.services-list {
+  list-style: none;
+}
+
+.services-item h3 {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+/* ------------ Блок 'О нас' */
+.slogan {
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 45px;
+  color: #000000;
+}
+
+.main-text {
+ font-weight: 700;
+ text-transform: uppercase;
+}
+
+/* "Таблица" в блоке "О нас" */
+.features-list th {
+  line-height: 24px;
+}
+
+.number-of-percents td {
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 10px;
+  color: #000000;
+}
+
+/* ------------Блок со списком клиентов */
+.clients-list {
+  list-style: none;
+}
+
+/*  ------------ */
+/* Страница каталога */
+
+/* Заголовок каталога */
+.catalog-page-container h1 {
+ font-size: 55px;
+ font-weight: 500;
+ line-height: 55px;
+ text-align: center;
+ color: #000000;
+}
+
+/* ------------ Фильтры каталога */
+.filter fieldset {
+  border: none;
+}
+
+.filter legend {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.filter ul {
+  list-style: none;
+  line-height: 30px;
+}
+
+.filter-input:hover + label,
+.filter-input:focus + label {
+  color: #283136;
+}
+
+.filter-input:disabled + label {
+  color: rgba(40, 49, 54, 0.3);
+}
+
+/* Работаем с каталогом и его элементами */
+.catalog-list {
+  list-style: none;
+}
+
+.catalog-item {
+  border: solid 1px rgba(0, 1, 1, 0.1);
+}
+
+.catalog-item:hover,
+.catalog-item:focus {
+  box-shadow: 0px 6px 15px 0 rgba(0, 1, 1, 0.25);
+  border: solid 1px rgba(77, 77, 77, 0.1);
+  background-color: #ffffff;
+}
+
+/* Окно с описанием шаблона (карточка товара) */
+.catalog-item-information {
+  text-align: center;
+  line-height: 18px;
+  background-color: #eeeeee;
+}
+
+/* Работаем с названием шаблона сайта в окошке описания */
+.template-name {
+  font-size: 18px;
+  line-height: 30px;
+  color: #000000;
+}
+
+.template-name:hover {
+   color: #fb565a;
+ }
+
+.template-name:active {
+   color: rgba(0, 0, 0, 0.3);
+ }
+
+ /* Список кнопок пагинации - убираем маркеры */
+ .pagination-list {
+   line-height: 30px;
+   list-style: none;
+ }
+
+/* ------------Футер */
+/* Блок с контактами */
+.contacts-block p {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+address {
+  line-height: 18px;
+  color: #666666;
+  font-style: normal;
+}
+
+/* Задаем цвет телефону - такой же как у содержащего его блока */
+address a {
+  color: #666666;
+}
+
+/* ------------ Модальное окно с формой */
+/* Заголовок */
+.modal-feedback h2 {
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 45px;
+  color: #000000;
+}
+
+/* Обертка каждого блока формы, содержащего поле и подпись */
+.feedback-item {
+  font-weight: 700;
+  line-height: 18px;
+}
+
+/* Поля введения текста формы в состоянии покоя, при наведении, фокусе и введении невалидного значения */
+.feedback-item input,
+.feedback-item textarea {
+  font: inherit;
+  font-weight: 400;
+
+  border: solid 2px #d7dcde;
+}
+
+.feedback-item input:hover,
+.feedback-item textarea:hover {
+  border: solid 2px #b4b9bb;
+}
+
+.feedback-item input:focus,
+.feedback-item textarea:focus {
+  border: solid 2px #000000;
+}
+
+.feedback-item input:invalid {
+  border-color: red;
+}
+
+/* Соцсети */
+/* Убираем маркеры списка соцсетей */
+.social-list {
+  list-style: none;
+}
+
+/* Временный цвет подписей для соцсетей */
+.social-button {
+  color: #283136;
+}
+
+.footer-slogan {
+  font-weight: 700;
+}
