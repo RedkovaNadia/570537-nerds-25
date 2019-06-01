@@ -37,9 +37,8 @@ a {
   background-color: #efc84a;
 }
 
-/* Кнопка 'ПОКАЗАТЬ'(КАТАЛОГ) и кнопки пагинации (КАТАЛОГ) - спокойное состояние */
-.filter-button,
-.pagination-item a {
+/* Кнопка 'ПОКАЗАТЬ'(КАТАЛОГ) - спокойное состояние */
+.filter-button {
   color: #000000;
   background-color: #eeeeee;
 }
@@ -60,11 +59,9 @@ a {
   background-color: #eab534;
 }
 
-/* Кнопка 'ПОКАЗАТЬ'(КАТАЛОГ) и кнопки пагинации (КАТАЛОГ) - состояние наведения, фокуса  */
+/* Кнопка 'ПОКАЗАТЬ'(КАТАЛОГ) - состояние наведения, фокуса  */
 .filter-button:hover,
-.filter-button:focus,
-.pagination-item a:hover,
-.pagination-item a:focus {
+.filter-button:focus {
   background-color: #dfdfdf;
 }
 
@@ -75,7 +72,7 @@ a {
   background-color: #d7373b;
 }
 
-/* Зеленая и желта кнопки в активном состоянии */
+/* Зеленая и желтая кнопки в активном состоянии */
 .button-green:active {
   background-color: #00bc6c;
 }
@@ -84,9 +81,8 @@ a {
   background-color: #e5a722;
 }
 
-/* Кнопка 'ПОКАЗАТЬ'(КАТАЛОГ) и кнопки пагинации (КАТАЛОГ) - активное состояние */
-.filter-button:active,
-.pagination-item a:active {
+/* Кнопка 'ПОКАЗАТЬ'(КАТАЛОГ) - активное состояние */
+.filter-button:active {
   color: rgba(0, 0, 0, 0.3);
   background-color: #d5d5d5;
 }
@@ -96,14 +92,29 @@ a {
   color: #ffffff;
 }
 
-/* Работаем с первой кнопкой пагинации */
+/* Работаем с кнопками пагинации - первой активной и остальными (КАТАЛОГ)*/
+.pagination-item a:last-child {
+  text-transform: uppercase;
+}
+
+.pagination-item a {
+  color: #000000;
+  background-color: #eeeeee;
+}
+
+.pagination-item a:hover,
+.pagination-item a:focus {
+  background-color: #dfdfdf;
+}
+
+.pagination-item a:active {
+  color: rgba(0, 0, 0, 0.3);
+  background-color: #d5d5d5;
+}
+
 .pagination-item-current a {
   background-color: inherit;
   border: solid 3px #dbdbdb;
-}
-
-.pagination-item a:last-child {
-  text-transform: uppercase;
 }
 
 .pagination-item-current a:hover,
@@ -284,14 +295,14 @@ a {
   text-transform: uppercase;
 }
 
-address {
+.studio-address {
   line-height: 18px;
   color: #666666;
   font-style: normal;
 }
 
 /* Задаем цвет телефону - такой же как у содержащего его блока */
-address a {
+.studio-address a {
   color: #666666;
 }
 
